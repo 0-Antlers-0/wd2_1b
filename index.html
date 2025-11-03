@@ -1,60 +1,155 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profil — Naše zvířata</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
 </head>
-<title>Profil</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="style css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
 <body>
-
-
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1>Naše zvířata</h1>
-            </a>
+            <a class="navbar-brand" href="#"><h1>Naše zvířata</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">O nás</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Náš Plán </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">O nás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Náš plán</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">program</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            jedinci
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">naši lachtani</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">zv</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">péče</a></li>
+                            <li><a class="dropdown-item" href="#">historie lachtanů</a></li>
+                            <li><a class="dropdown-item" href="#">o lachtanech</a></li>
                         </ul>
                     </li>
-                </ul><button type="button" class="btn btn-secondary btn-lg">Large button</button>
-            </div> 
-            <div class="container-fluid p-0" div>
-            <img src="images/hero.jpg" class="img-fluid w-100" alt="Naše zvířata">
+                </ul>
+                <button type="button" class="btn btn-secondary btn-lg">Kontaktujte nás</button>
             </div>
         </div>
     </nav>
-</body>
 
+    <main>
+        <section class="hero-under">
+            <img src="pexels-magda-ehlers-pexels-3720724.jpg" alt="Naše zvířata — hero image" class="hero-img">
+            <div class="overlay">
+                <div class="text-cutout">Lachtan.SRO</div>
+            </div>
+
+
+            <div class="divider-wrap" aria-hidden="true">
+                <!-- wave -->
+                <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 C360,120 720,-20 1440,40 L1440,100 L0,100 Z"></path>
+                </svg>
+
+                <div class="solid-line"></div>
+            </div>
+        </section>
+
+        <section class="container content-below">
+            <h2>O našich zvířatech</h2>
+            <p>
+              V naší péči jsou momentálně tři lachtani, kteří si užívají klidné dny u vody. Rádi se sluní na kamenech, hrají si mezi sebou a objevují každý kout svého prostoru. Jejich zvědavost a hravost přináší každému návštěvníkovi radost a připomíná, jak důležité je chránit jejich přirozené prostředí.
+
+            </p>
+        </section>
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <img src="pexels-franz-niebauer-3374089-7047038.jpg" class="card-img-top" alt="První obrázek">
+                        <div class="card-body">
+                            <h3 class="card-title">Luna</h3>
+                            <p class="card-text">Luna je zachráněný lachtan před pytláky momentálně je v naší péči</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <img src="pexels-robertkso-16851079.jpg" class="card-img-top" alt="Druhý obrázek">
+                        <div class="card-body">
+                            <h3 class="card-title">Hugo</h3>
+                            <p class="card-text">Hugo je u nás v péči už od narození, Hugo byl odcizen od sve matky, pokusi o navracení do divočiny byly
+                                marne ,protože se vždy vratil zpátky
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <img src="pexels-wijs-wise-136435282-12290950.jpg" class="card-img-top" alt="Třetí obrázek">
+                        <div class="card-body">
+                            <h3 class="card-title">Chris</h3>
+                            <p class="card-text">Chris se našel se sítí obmotaný okolo jeho těna řezalo ho do ploutví a těžko se mu dýchalo, hned jsme začali záchranou akci</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider-wrap" aria-hidden="true">
+            <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C360,120 720,-20 1440,40 L1440,100 L0,100 Z"></path>
+            </svg>
+            <div class="solid-line"></div>
+        </div>
+
+        <section class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="žena.jpg" alt="Popis obrázku" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>Elena Marešová</h2>
+                    <p>Společnost Lachtan s.r.o. byla založena v roce 2019 vývojářkou Elenou Marešovou, která spojila moderní technologie s ochranou mořského života. Jejím snem bylo využít inovace k ochraně přírody – konkrétně k záchraně lachtanů, 
+                        kteří se stále častěji potýkají s dopady lidské činnosti a znečištěním oceánů.</p>
+                    <p>Pod jejím vedením vyvíjí společnost chytré systémy pro sledování mořských savců, 
+                        monitorování kvality vody a digitální evidenci záchranných operací.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="simple-divider" aria-hidden="true">
+            <div class="solid-line"></div>
+        </div>
+        <section class="container my-5 big-feature">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1">
+                    <h2>naše dosažene cíle</h2>
+                    
+                   Díky těmto krokům jsme mohli dosáhnout řady významných cílů. Od roku 2018 jsme zachránili 
+                   přes 1 200 lachtanů, z nichž většina se úspěšně vrátila do moře. Naše záchranná stanice dnes 
+                   funguje nepřetržitě — 24 hodin denně, 7 dní v týdnu — a umožňuje rychlé reakce na každé hlášení o 
+                   poraněném nebo vyplaveném zvířeti. Založili jsme také tři pobřežní stanoviště, která zajišťují první
+                    pomoc a převoz zvířat do našeho hlavního centra.
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <img src="pexels-pixabay-48148.jpg" alt="Popis velké fotky" class="img-fluid feature-img rounded shadow">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Lachtan.SRO</p>
+            <p>Tel: <a href="tel:+420602123456">+420 602 123 456</a> • Email: <a href="mailto:info@lachtan-sro.cz">info@lachtan-sro.cz</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
 </html>
